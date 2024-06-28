@@ -1,24 +1,67 @@
-body{
-    background-color: #008AE6 !important;
-}
-
-.item-list{
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .scrollable-viewer {
+    width: 100%;
+    max-width: 700px;
+    height: 70%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .viewer-header {
+    background-color: #f0f0f0;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.columns{
-    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .viewer-header h2 {
+    margin: 0;
+  }
+  
+  .viewer-body {
+    padding: 10px;
+    height: 100%; /* Adjust height as needed */
+    overflow-y: auto;
+  }
+  
+  #textView {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  #copyButton {
+    padding: 8px 16px;
+    background-color: #008AE6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #copyButton:hover {
+    background-color: #008AE6;
+  }
+  .scroll-holder{
+    height: 60vh;
     display: flex;
     align-items: center;
-}
+    justify-content: center;
+  }
 
-.item-list a{
+
+.hm-button{
     text-decoration: none;
     font-weight: 700;
-    margin: 10px;
-    background-color: white;
-    color: black;
+    background-color: #000;
+    color: #fff;
     border-radius: 5px;
     height: 50px;
     width: 120px;
@@ -27,33 +70,16 @@ body{
     justify-content:center ;
 }
 
-.item-list a:hover{
-    background-color: #000;
-    color: #fff;
+.hm-btn-holder{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hm-button:hover{
+    background-color: #008AE6;
+    color: white;
     transform: scale(1.1);
     transition-duration: 1000MS;
-}
-
-#head-title{
-    text-align: center !important;
-}
-
-.main-cont{
-    padding: 40px;
-    height: 800px;
-    width: 80vw;
-    background-color: white;
-    border-radius: 9px;
-    text-align: justify;
-}
-
-.sih{
-    padding: 150px;
-    font-size: 100px;
-    font-weight: 900;
-    text-align: center !important;
-}
-
-#red-txt{
-    color: red;
 }
